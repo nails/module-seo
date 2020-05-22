@@ -2,7 +2,7 @@
     "name": "nails\/module-seo",
     "keywords": [],
     "homepage": "https:\/\/docs.nailsapp.co.uk\/modules\/other\/seo",
-    "description": "The SEO module brings funcitonality for improving site SEO and social presence.",
+    "description": "The SEO module brings functionality for improving site SEO and social presence.",
     "license": "MIT",
     "minimum-stability": "dev",
     "prefer-stable": true,
