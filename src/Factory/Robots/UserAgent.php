@@ -43,7 +43,10 @@ abstract class UserAgent implements Interfaces\Robots\UserAgent
      */
     public function disallow(): array
     {
-        return [];
+        return [
+            '/admin',
+            '/auth',
+        ];
     }
 
     // --------------------------------------------------------------------------
