@@ -25,7 +25,7 @@ class Routes implements RouteGenerator
      *
      * @return array
      */
-    public static function generate()
+    public static function generate(): array
     {
         return [
             'robots\.txt' => 'seo/robots/index',
