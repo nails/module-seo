@@ -1,36 +1,49 @@
 {
-    "name": "nails\/module-seo",
-    "keywords": [],
-    "homepage": "https:\/\/docs.nailsapp.co.uk\/modules\/other\/seo",
+    "name": "nails/module-seo",
+    "keywords":
+    [],
+    "homepage": "https://docs.nailsapp.co.uk/modules/other/seo",
     "description": "The SEO module brings functionality for improving site SEO and social presence.",
     "license": "MIT",
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "require": {
-        "nails\/common": "dev-develop"
+    "require":
+    {
+        "nails/common": "dev-develop"
     },
-    "require-dev": {
-        "phpunit\/phpunit": "8.*"
+    "require-dev":
+    {
+        "phpunit/phpunit": "9.*",
+        "phpstan/phpstan": "1.*"
     },
-    "autoload": {
-        "psr-4": {
-            "Nails\\Seo\\": "src\/"
+    "scripts":
+    {
+        "test": "./vendor/bin/phpunit",
+        "analyse": "./vendor/bin/phpstan analyse -c .phpstan/config.neon"
+    },
+    "autoload":
+    {
+        "psr-4":
+        {
+            "Nails\\Seo\\": "src/"
         }
     },
-    "autoload-dev": {
-        "psr-4": {
-            "Nails\\Seo\\Tests\\": "src\/"
+    "autoload-dev":
+    {
+        "psr-4":
+        {
+            "Nails\\Seo\\Tests\\": "src/"
         }
     },
-    "extra": {
-        "nails": {
+    "extra":
+    {
+        "nails":
+        {
             "moduleName": "module-seo",
             "type": "module",
             "namespace": "Nails\\Seo\\",
-            "data": {}
+            "data":
+            {}
         }
-    },
-    "scripts": {
-        "test": ".\/vendor\/bin\/phpunit"
     }
 }
