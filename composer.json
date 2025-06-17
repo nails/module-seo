@@ -39,7 +39,7 @@
     {
         "nails":
         {
-            "moduleName": "module-seo",
+            "moduleName": "seo",
             "type": "module",
             "namespace": "Nails\\Seo\\",
             "data":
